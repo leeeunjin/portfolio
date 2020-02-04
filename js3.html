@@ -6,10 +6,12 @@
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
 	$(document).ready(function() {
-		$("li.first").css("color", "red");
+		//eq() 함수는 해당요소가 여러개인 경우
+		//0번지부터 ~ -1번지까지 차례로 지정이 가능
+		$("li.first").eq(0).css("color", "red");
 		$("li.second").eq(0).css("color", "orange");
 		$("li.first").eq(1).css("color", "green");
-		$("li.third").css("color", "blue");
+		$("li.third").eq(0).css("color", "blue");
 		$("li.second").eq(1).css("color", "brown");
 		$("li.third").eq(1).css("color", "purple");
 		
