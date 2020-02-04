@@ -12,7 +12,7 @@
 	<h1 id="hid">test2</h1>
 	<h1 name="hname">test3</h1>
 	<h1 class="hclass">test4</h1>
-	<h1 class="hclass">test5</h1>
+	<h1 class="hclass select">test5</h1>
 	<h1 name="hname">test6</h1>
 	<h1 id="hid">test7</h1>
 </body>
@@ -22,6 +22,8 @@
 		$("#hid").css("color","orange");	//id가 hid인 요소의 css 설정을 변경
 		$("h1[name=hname]").css("color","yellow");	//name이 hname인 요소의 css 설정을 변경
 		$(".hclass").css("color","green");	//class가 hclass인 요소의 css 설정을 변경
+		$(".hclass.select").css("color","blue");	//class가 hclass인 요소의 css 설정을 변경
+		
 	});
 </script>
 </html>
