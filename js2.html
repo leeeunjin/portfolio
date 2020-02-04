@@ -14,10 +14,10 @@
 </body>
 <script>
 	$(document).ready(function() {
-		$("h1").css("color", "red");
-		$("#hid").css("color","orange");
-		$("#hname").css("color","yellow");
-		$("#hclass").css("color","green");
+		//$("h1").css("color", "red");		//모든 h1요소의 css 설정을 변경
+		$("#hid").css("color","orange");	//id가 hid인 요소의 css 설정을 변경
+		$("h1[hname=hname]").css("color","yellow");	//name이 hname인 요소의 css 설정을 변경
+		$("hclass").css("color","green");	//class가 hclass인 요소의 css 설정을 변경
 	});
 </script>
 </html>
