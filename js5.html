@@ -1,1 +1,27 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>odd/even test</h1>
+<table>
+<tr><th>이름</th><th>혈액형</th><th>지역</th></tr>
+<tr><th>이은진</th><th>B</th><th>삼각동</th></tr>
+<tr><th>김다현</th><th>A</th><th>지산동</th></tr>
+<tr><th>김태석</th><th>O</th><th>동천동</th></tr>
+<tr><th>박재호</th><th>O</th><th>삼각동</th></tr>
+<tr><th>정세현</th><th>AB</th><th>서석동</th></tr>
+<tr><th>조준영</th><th>AB</th><th>우산동</th></tr>
+</table>
+</body>
+<script>
+$(document).ready(function() {
+	$("tr:odd").css("background","white");
+	$("tr:even").css("background","#cccccc");
+	$("tr:first").css("background","#000000").css("color","#FFFFFF");
+	
+}
+</script>
+</html>
